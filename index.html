@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <title>조화음포트폴리오</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="gnb-nav">
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#aboutme">Aboutme</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <!-- <li><a href="#other">Other</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <article class="article">
+        <section class="swiper-section">
+            <div id="intro">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="http://bdmp-003.cafe24.com/bizdemo40925/img/images/hero-img/slide1.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="image/bg03.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="http://bdmp-003.cafe24.com/bizdemo40925/img/images/hero-img/slide2.jpg">
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+
+        <section class="aboutme-section">
+            <div id="aboutme">
+                <div class="aboutme-container">
+                    <div class="aboutme-wrapper">
+                        <h1 class="about-text">ABOUT ME</h1>
+                        <div class="aboutme-img">
+                            <img src="image/09.png">
+                            <p class="typing"></p>
+                        </div>
+                        <div class="aboutme-text">
+                            <p><strong class="text">GROWTH</strong>다양한 경험을 통하여 성장하는 사람입니다</p>
+                            <p><strong class="text">THE DEPTH OF One's life</strong>인내와 노력을 통하여 삶의 깊이를 통찰합니다 </p>
+                            <p><strong class="text">DON't give up</strong> 그것은 나를 더 발전시키는 밑거름이 됩니다</p>
+                            <p><strong class="text">THE BEST RESULT</strong> 포기하지 않는 열정은 최선의 결과로 이어집니다 </p>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="Portfolio-section">
+            <div id="portfolio">
+                <div class="Portfolio-container">
+                    <h1 class="portfolio-text">WEB PUBLISHING</h1>
+                    <div data-aos="zoom-in">
+                        <div class="Portfolio-wrapper">
+                            <div class="por-image">
+                                <a href="#"><img src="image/c02.png"></a>
+                            </div>
+                            <div class="por-text">
+                                <h1>착한구두</h1>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <div class="Portfolio-wrapper">
+                            <div class="por-image"><a href="#"><img src="image/b02.jpg"></a></div>
+                            <div class="por-text">
+                                <h1>THE ZAM</h1>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="zoom-in">
+                        <div class="Portfolio-wrapper">
+                            <div class="por-image"><a href="#"><img src="image/b05.png"></a></div>
+                            <div class="por-text">
+                                <h1>CINNAMON</h1>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                                <p>web 접근성에 맞게 제작 되었습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="contact-section">
+            <div id="contact">
+                <div class="contact-container">
+                    <div class="contact-wrapper"></div>
+                </div>
+        </section>
+    </article>
+
+</body>
+
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+
+<!-- 글자타이핑스크립트 -->
+<script src="https://cdn.jsdelivr.net/gh/hiphop5782/js@0.0.6/typing/hakademy-typing.js"></script>
+<script>
+    window.addEventListener("load", function () {
+        var tag = document.querySelector(".typing");
+        var app = new Hakademy.util.typing(tag, {
+            text: [
+                "cho hwa eum",
+            ],
+            color: {
+                list: true
+            }
+        });
+    });
+</script>
+
+<script>
+    AOS.init();
+</script>
+
+</html>
