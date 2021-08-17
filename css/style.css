@@ -128,9 +128,9 @@ a:hover:after {
 .aboutme-text {
   position: relative;
   float: right;
-  width: 800px;
-  height: auto;
-  top: 50px;
+  width: 47%;
+  height: 300px;
+ 
 }
 
 .aboutme-text>p {
@@ -140,8 +140,9 @@ a:hover:after {
 }
 
 .text {
+  padding-right: 10px;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 
@@ -166,18 +167,18 @@ a:hover:after {
   position: relative;
   top: 130px;
   margin: 0 auto;
-  width: 1600px;
+  width: 1700px;
   height: 700px;
 }
 
 .por-image {
   float: right;
-  width: 900px;
+  width: 70%;
   padding-top: 100px;
 }
 
 .por-image img {
-  width: 900px;
+  width: 850px;
   object-fit: cover;
 }
 
@@ -198,6 +199,59 @@ a:hover:after {
 }
 
 
+/* 스킬박스스타일 */
+.skill_box {
+  float: right;
+  width: 47%;
+  top: 1700px;
+}
+
+.skill_box>h1 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+/* 써클스타일 */
+.flx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.flx-item {
+  margin-right: .5rem;
+  margin-left: .5rem;
+}
+
+
+@keyframes progress {
+  0% {
+      stroke-dasharray: 0 100;
+  }
+}
+
+.circle-progress {
+  display: block;
+  width: 110px;
+}
+
+.circle-path {
+  fill: rgba(255, 255, 255, 0);
+  animation: progress 7s forwards;
+  /* stroke-linecap: round; */
+  stroke-width: 2.5;
+  stroke:  #ee5f5f;
+  /* stroke: #816747; */
+}
+
+.circle-text {
+  color: black;
+  font-size: .3rem;
+  text-anchor: middle;
+  font-weight: 400;
+}
+
 /* 콘텍트스타일 */
 .contact-container {
   max-width: 100%;
@@ -211,12 +265,13 @@ a:hover:after {
 }
 
 .contact-text{
+  color: #8a909b;
   text-align: center;
 }
 
 .contact-text h1{
   margin-top:150px;
-  font-size: 90px;
+  font-size: 80px;
 }
 
 .contact-text p
@@ -225,21 +280,3 @@ a:hover:after {
   font-size: 25px;
 }
 
-
-/* .aboutme-section{
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
